@@ -6,7 +6,7 @@ open Azure
 module BlobCache =
     let getBlobAsync(connectionString: string, containerName: string, blobName: string) = 
         task {
-            let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions(BlobClientOptions.ServiceVersion.V2021_06_08))
+            let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions())
             let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
             let blobClient = blobContainerClient.GetBlobClient(blobName)
             let! blobResultWithMatadata  =

@@ -1,0 +1,3357 @@
+{
+  "conditions" : [ {
+    "conditionName" : "Achilles tendinopathy and bursitis",
+    "rhRegisterId" : "F2015L01336",
+    "bopRegisterId" : "F2015L01337",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M76.6"
+    } ]
+  }, {
+    "conditionName" : "Alzheimer disease",
+    "rhRegisterId" : "F2019L00240",
+    "bopRegisterId" : "F2019L00239",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G30.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G30.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G30.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G30.9"
+    } ]
+  }, {
+    "conditionName" : "Barrett's oesophagus",
+    "rhRegisterId" : "F2016L01135",
+    "bopRegisterId" : "F2016L01137",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K22.7"
+    } ]
+  }, {
+    "conditionName" : "Charcot-Marie-Tooth disease",
+    "rhRegisterId" : "F2014L01827",
+    "bopRegisterId" : "F2014L01829",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G60.0"
+    } ]
+  }, {
+    "conditionName" : "Creutzfeldt-Jakob disease",
+    "rhRegisterId" : "F2014L01138",
+    "bopRegisterId" : "F2014L01139",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A81.0"
+    } ]
+  }, {
+    "conditionName" : "Cushing syndrome",
+    "rhRegisterId" : "F2018L00555",
+    "bopRegisterId" : "F2018L00556",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E24.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E24.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E24.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E24.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E24.9"
+    } ]
+  }, {
+    "conditionName" : "Dupuytren disease",
+    "rhRegisterId" : "F2019L00007",
+    "bopRegisterId" : "F2019L00008",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M72.0"
+    } ]
+  }, {
+    "conditionName" : "Gaucher's disease",
+    "rhRegisterId" : "F2014L01843",
+    "bopRegisterId" : "F2014L01846",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "Graves disease",
+    "rhRegisterId" : "F2022L00008",
+    "bopRegisterId" : "F2022L00009",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E05.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E05.5"
+    } ]
+  }, {
+    "conditionName" : "Guillain-Barre syndrome",
+    "rhRegisterId" : "F2021C00456",
+    "bopRegisterId" : "F2021C00457",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G61.0"
+    } ]
+  }, {
+    "conditionName" : "Hashimoto thyroiditis",
+    "rhRegisterId" : "F2021L01907",
+    "bopRegisterId" : "F2021L01908",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "Hodgkin's lymphoma",
+    "rhRegisterId" : "F2014L00467",
+    "bopRegisterId" : "F2014L00468",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C81"
+    } ]
+  }, {
+    "conditionName" : "Huntington's chorea",
+    "rhRegisterId" : "F2014L01851",
+    "bopRegisterId" : "F2014L01852",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G10"
+    } ]
+  }, {
+    "conditionName" : "IgA nephropathy",
+    "rhRegisterId" : "F2021L00618",
+    "bopRegisterId" : "F2021L00621",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N02.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N02.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N02.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N02.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N02.8"
+    } ]
+  }, {
+    "conditionName" : "Kaposi sarcoma",
+    "rhRegisterId" : "F2019L01689",
+    "bopRegisterId" : "F2019L01691",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C46"
+    } ]
+  }, {
+    "conditionName" : "Lyme disease",
+    "rhRegisterId" : "F2016L00254",
+    "bopRegisterId" : "F2016L00255",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A69.2"
+    } ]
+  }, {
+    "conditionName" : "Marfan syndrome",
+    "rhRegisterId" : "F2014L01835",
+    "bopRegisterId" : "F2014L01838",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Q87.4"
+    } ]
+  }, {
+    "conditionName" : "Meniere's disease",
+    "rhRegisterId" : "F2015L01328",
+    "bopRegisterId" : "F2015L01329",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H81.0"
+    } ]
+  }, {
+    "conditionName" : "Morton metatarsalgia",
+    "rhRegisterId" : "F2019L01098",
+    "bopRegisterId" : "F2019L01100",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G57.6"
+    } ]
+  }, {
+    "conditionName" : "Paget's disease of bone",
+    "rhRegisterId" : "F2015L00255",
+    "bopRegisterId" : "F2015L00256",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M88"
+    } ]
+  }, {
+    "conditionName" : "Parkinson's disease and secondary parkinsonism",
+    "rhRegisterId" : "F2016L00560",
+    "bopRegisterId" : "F2016L00570",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "Ross River virus infection",
+    "rhRegisterId" : "F2019C00786",
+    "bopRegisterId" : "F2019L01354",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B33.1"
+    } ]
+  }, {
+    "conditionName" : "Scheuermann's disease",
+    "rhRegisterId" : "F2016L01344",
+    "bopRegisterId" : "F2016L01343",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M42.0"
+    } ]
+  }, {
+    "conditionName" : "Wilson's disease",
+    "rhRegisterId" : "F2014L01847",
+    "bopRegisterId" : "F2014L01849",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "Zika virus infection",
+    "rhRegisterId" : "F2018L00018",
+    "bopRegisterId" : "F2018L00019",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "accidental hypothermia",
+    "rhRegisterId" : "F2018L00200",
+    "bopRegisterId" : "F2018L00201",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T68"
+    } ]
+  }, {
+    "conditionName" : "accommodation disorder",
+    "rhRegisterId" : "F2017L00888",
+    "bopRegisterId" : "F2017L00889",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H52.5"
+    } ]
+  }, {
+    "conditionName" : "acoustic neuroma",
+    "rhRegisterId" : "F2019L01363",
+    "bopRegisterId" : "F2019L01362",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D33.3"
+    } ]
+  }, {
+    "conditionName" : "acquired cataract",
+    "rhRegisterId" : "F2017C00870",
+    "bopRegisterId" : "F2017C00869",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H25"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H26.1"
+    } ]
+  }, {
+    "conditionName" : "acute articular cartilage tear",
+    "rhRegisterId" : "F2019L00233",
+    "bopRegisterId" : "F2019L00234",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "acute infectious mononucleosis",
+    "rhRegisterId" : "F2021L00002",
+    "bopRegisterId" : "F2021L00003",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B27.0"
+    } ]
+  }, {
+    "conditionName" : "acute lymphoblastic leukaemia/lymphoblastic lymphoma",
+    "rhRegisterId" : "F2021L00215",
+    "bopRegisterId" : "F2021L00216",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "acute meniscal tear of the knee",
+    "rhRegisterId" : "F2019L00246",
+    "bopRegisterId" : "F2019L00247",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "S83.2"
+    } ]
+  }, {
+    "conditionName" : "acute myeloid leukaemia",
+    "rhRegisterId" : "F2020C00211",
+    "bopRegisterId" : "F2017C00808",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "acute pancreatitis",
+    "rhRegisterId" : "F2020L00211",
+    "bopRegisterId" : "F2020L00212",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K85"
+    } ]
+  }, {
+    "conditionName" : "acute rheumatic fever",
+    "rhRegisterId" : "F2019L00641",
+    "bopRegisterId" : "F2019L00642",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I00"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I01"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I02"
+    } ]
+  }, {
+    "conditionName" : "acute stress disorder",
+    "rhRegisterId" : "F2018C00636",
+    "bopRegisterId" : "F2018C00637",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "adhesive capsulitis of the shoulder",
+    "rhRegisterId" : "F2020L01376",
+    "bopRegisterId" : "F2020L01377",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M75.0"
+    } ]
+  }, {
+    "conditionName" : "adjustment disorder",
+    "rhRegisterId" : "F2018C00629",
+    "bopRegisterId" : "F2018C00630",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F43.2"
+    } ]
+  }, {
+    "conditionName" : "adrenal insufficiency",
+    "rhRegisterId" : "F2018L01182",
+    "bopRegisterId" : "F2018L01183",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E27.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E27.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E27.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E27.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E89.6"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A18.7"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A39.1"
+    } ]
+  }, {
+    "conditionName" : "albinism",
+    "rhRegisterId" : "F2014L01823",
+    "bopRegisterId" : "F2014L01825",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "alcohol use disorder",
+    "rhRegisterId" : "F2018C00648",
+    "bopRegisterId" : "F2018C00652",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "allergic contact dermatitis",
+    "rhRegisterId" : "F2021L00032",
+    "bopRegisterId" : "F2021L00033",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L23"
+    } ]
+  }, {
+    "conditionName" : "allergic rhinitis",
+    "rhRegisterId" : "F2014L00306",
+    "bopRegisterId" : "F2014L00300",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J30.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J30.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J30.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J30.4"
+    } ]
+  }, {
+    "conditionName" : "alpha-1 antitrypsin deficiency",
+    "rhRegisterId" : "F2014L01837",
+    "bopRegisterId" : "F2014L01840",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "anal fissure",
+    "rhRegisterId" : "F2019L01089",
+    "bopRegisterId" : "F2019L01090",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K60.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K60.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K60.2"
+    } ]
+  }, {
+    "conditionName" : "analgesic nephropathy",
+    "rhRegisterId" : "F2016L01667",
+    "bopRegisterId" : "F2016L01680",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N14.0"
+    } ]
+  }, {
+    "conditionName" : "angle-closure glaucoma",
+    "rhRegisterId" : "F2021L00014",
+    "bopRegisterId" : "F2021L00016",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H40"
+    } ]
+  }, {
+    "conditionName" : "animal envenomation",
+    "rhRegisterId" : "F2016L01663",
+    "bopRegisterId" : "F2016L01666",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T63"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "X20"
+    } ]
+  }, {
+    "conditionName" : "ankylosing spondylitis",
+    "rhRegisterId" : "F2021L00364",
+    "bopRegisterId" : "F2021L00362",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M45"
+    } ]
+  }, {
+    "conditionName" : "anosmia",
+    "rhRegisterId" : "F2021L00004",
+    "bopRegisterId" : "F2021L00005",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "R43.0"
+    } ]
+  }, {
+    "conditionName" : "antiphospholipid syndrome",
+    "rhRegisterId" : "F2016L01348",
+    "bopRegisterId" : "F2016L01352",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "anxiety disorder",
+    "rhRegisterId" : "F2018C00638",
+    "bopRegisterId" : "F2018C00639",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "aortic aneurysm and aortic wall disorders",
+    "rhRegisterId" : "F2021L00011",
+    "bopRegisterId" : "F2021L00012",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "aortic stenosis",
+    "rhRegisterId" : "F2021L01910",
+    "bopRegisterId" : "F2021L01911",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I35.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I35.2"
+    } ]
+  }, {
+    "conditionName" : "aplastic anaemia",
+    "rhRegisterId" : "F2020L01085",
+    "bopRegisterId" : "F2020L01088",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D61.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D61.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D61.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D61.8"
+    } ]
+  }, {
+    "conditionName" : "arachnoid cyst",
+    "rhRegisterId" : "F2015L00924",
+    "bopRegisterId" : "F2015L00925",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "asbestosis",
+    "rhRegisterId" : "F2021L00605",
+    "bopRegisterId" : "F2021L00606",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J61"
+    } ]
+  }, {
+    "conditionName" : "ascariasis",
+    "rhRegisterId" : "F2017L00015",
+    "bopRegisterId" : "F2017L00016",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B77"
+    } ]
+  }, {
+    "conditionName" : "asthma",
+    "rhRegisterId" : "F2021L00211",
+    "bopRegisterId" : "F2021L00220",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "atrial fibrillation and atrial flutter",
+    "rhRegisterId" : "F2014L00481",
+    "bopRegisterId" : "F2014L00482",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I48"
+    } ]
+  }, {
+    "conditionName" : "autosomal dominant polycystic kidney disease",
+    "rhRegisterId" : "F2015L00004",
+    "bopRegisterId" : "F2015L00005",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Q61.2"
+    } ]
+  }, {
+    "conditionName" : "benign neoplasm of the eye and adnexa",
+    "rhRegisterId" : "F2017C00853",
+    "bopRegisterId" : "F2017C00854",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D31"
+    } ]
+  }, {
+    "conditionName" : "benign paroxysmal positional vertigo",
+    "rhRegisterId" : "F2017L01050",
+    "bopRegisterId" : "F2017L01051",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H81.1"
+    } ]
+  }, {
+    "conditionName" : "benign prostatic hyperplasia",
+    "rhRegisterId" : "F2016L00240",
+    "bopRegisterId" : "F2016L00242",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N40"
+    } ]
+  }, {
+    "conditionName" : "bipolar disorder",
+    "rhRegisterId" : "F2018L00867",
+    "bopRegisterId" : "F2018L00869",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "blepharitis",
+    "rhRegisterId" : "F2019L00251",
+    "bopRegisterId" : "F2019L00252",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "bronchiectasis",
+    "rhRegisterId" : "F2017L00467",
+    "bopRegisterId" : "F2017L00469",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "bronchiolitis obliterans organising pneumonia",
+    "rhRegisterId" : "F2018L01178",
+    "bopRegisterId" : "F2018L01179",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "bruxism",
+    "rhRegisterId" : "F2016L01672",
+    "bopRegisterId" : "F2016L01671",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "cardiac myxoma",
+    "rhRegisterId" : "F2017L00463",
+    "bopRegisterId" : "F2017L00465",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D15.1"
+    } ]
+  }, {
+    "conditionName" : "cardiomyopathy",
+    "rhRegisterId" : "F2018C00643",
+    "bopRegisterId" : "F2018C00644",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I42"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I43"
+    } ]
+  }, {
+    "conditionName" : "carotid artery disease",
+    "rhRegisterId" : "F2020L01096",
+    "bopRegisterId" : "F2020L01100",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I65.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I70.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I72.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I77.0"
+    } ]
+  }, {
+    "conditionName" : "carpal tunnel syndrome",
+    "rhRegisterId" : "F2021L01167",
+    "bopRegisterId" : "F2021L01169",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G56.0"
+    } ]
+  }, {
+    "conditionName" : "central serous chorioretinopathy",
+    "rhRegisterId" : "F2018L00552",
+    "bopRegisterId" : "F2018L00553",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H35.7"
+    } ]
+  }, {
+    "conditionName" : "cerebral meningioma",
+    "rhRegisterId" : "F2018L00006",
+    "bopRegisterId" : "F2018L00007",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D32.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D32.9"
+    } ]
+  }, {
+    "conditionName" : "cerebrovascular accident",
+    "rhRegisterId" : "F2021C00459",
+    "bopRegisterId" : "F2021C00460",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I61"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I63"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I64"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G45.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G45.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G45.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G45.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G45.9"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G46"
+    } ]
+  }, {
+    "conditionName" : "cervical spondylosis",
+    "rhRegisterId" : "F2019C00787",
+    "bopRegisterId" : "F2014L00932",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M47.01"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.02"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.03"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.11"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.12"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.13"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.21"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.22"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.23"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.81"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.82"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.83"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.91"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.92"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.93"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M50.3"
+    } ]
+  }, {
+    "conditionName" : "chickenpox",
+    "rhRegisterId" : "F2015L00919",
+    "bopRegisterId" : "F2015L00920",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B01"
+    } ]
+  }, {
+    "conditionName" : "chilblains",
+    "rhRegisterId" : "F2018L00198",
+    "bopRegisterId" : "F2018L00199",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T69.1"
+    } ]
+  }, {
+    "conditionName" : "chloracne",
+    "rhRegisterId" : "F2020L01104",
+    "bopRegisterId" : "F2020L01107",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "cholelithiasis",
+    "rhRegisterId" : "F2016L00557",
+    "bopRegisterId" : "F2016L00558",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K80"
+    } ]
+  }, {
+    "conditionName" : "chondromalacia patella",
+    "rhRegisterId" : "F2018L01834",
+    "bopRegisterId" : "F2018L01836",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M22.4"
+    } ]
+  }, {
+    "conditionName" : "chronic fatigue syndrome",
+    "rhRegisterId" : "F2021L01455",
+    "bopRegisterId" : "F2021L01454",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic gastritis and chronic gastropathy",
+    "rhRegisterId" : "F2021L01384",
+    "bopRegisterId" : "F2017C00796",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic insomnia disorder",
+    "rhRegisterId" : "F2019L00228",
+    "bopRegisterId" : "F2019L00230",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic lymphocytic leukaemia/small lymphocytic lymphoma",
+    "rhRegisterId" : "F2016C00270",
+    "bopRegisterId" : "F2014L01147",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic multisymptom illness",
+    "rhRegisterId" : "F2020L00208",
+    "bopRegisterId" : "F2020L00209",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic myeloid leukaemia",
+    "rhRegisterId" : "F2017C00793",
+    "bopRegisterId" : "F2017C00789",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C92.1"
+    } ]
+  }, {
+    "conditionName" : "chronic obstructive pulmonary disease",
+    "rhRegisterId" : "F2015C00915",
+    "bopRegisterId" : "F2015C00914",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic pancreatitis",
+    "rhRegisterId" : "F2020L01102",
+    "bopRegisterId" : "F2020L01105",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K86.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K86.1"
+    } ]
+  }, {
+    "conditionName" : "chronic pruritus ani",
+    "rhRegisterId" : "F2019L00254",
+    "bopRegisterId" : "F2019L00256",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic solvent-induced neurocognitive disorder",
+    "rhRegisterId" : "F2021L01626",
+    "bopRegisterId" : "F2021L01627",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "chronic venous insufficiency of the lower limb and varicose veins of the lower limb",
+    "rhRegisterId" : "F2021L00020",
+    "bopRegisterId" : "F2021L00022",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I87.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I87.2"
+    } ]
+  }, {
+    "conditionName" : "cirrhosis of the liver",
+    "rhRegisterId" : "F2017C00865",
+    "bopRegisterId" : "F2017L00003",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K70.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K71.7"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K74.3"
+    } ]
+  }, {
+    "conditionName" : "clonorchiasis",
+    "rhRegisterId" : "F2016L00561",
+    "bopRegisterId" : "F2016L00562",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B66.1"
+    } ]
+  }, {
+    "conditionName" : "cluster headache",
+    "rhRegisterId" : "F2018L00902",
+    "bopRegisterId" : "F2018L00903",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G44.0"
+    } ]
+  }, {
+    "conditionName" : "coeliac disease",
+    "rhRegisterId" : "F2020L00489",
+    "bopRegisterId" : "F2020L00498",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K90.0"
+    } ]
+  }, {
+    "conditionName" : "colorectal adenoma",
+    "rhRegisterId" : "F2021L01914",
+    "bopRegisterId" : "F2021L01915",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D12.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.7"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D12.8"
+    } ]
+  }, {
+    "conditionName" : "complex regional pain syndrome",
+    "rhRegisterId" : "F2016L01675",
+    "bopRegisterId" : "F2016L01678",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "concussion",
+    "rhRegisterId" : "F2018L01492",
+    "bopRegisterId" : "F2018L01493",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "conductive hearing loss",
+    "rhRegisterId" : "F2019L01093",
+    "bopRegisterId" : "F2019L01095",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "conjunctivitis",
+    "rhRegisterId" : "F2020L01395",
+    "bopRegisterId" : "F2020L01397",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H10"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H13.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H13.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H16.2"
+    } ]
+  }, {
+    "conditionName" : "coronavirus disease 2019",
+    "rhRegisterId" : "F2020L00709",
+    "bopRegisterId" : "F2020L00710",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "cut, stab, abrasion and laceration",
+    "rhRegisterId" : "F2016L00567",
+    "bopRegisterId" : "F2016L00571",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "de Quervain tendinopathy",
+    "rhRegisterId" : "F2019L00242",
+    "bopRegisterId" : "F2019L00241",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M65.4"
+    } ]
+  }, {
+    "conditionName" : "decompression sickness",
+    "rhRegisterId" : "F2014L01830",
+    "bopRegisterId" : "F2014L01832",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T70.3"
+    } ]
+  }, {
+    "conditionName" : "deep vein thrombosis",
+    "rhRegisterId" : "F2021L00223",
+    "bopRegisterId" : "F2021L00224",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "dementia pugilistica",
+    "rhRegisterId" : "F2021L00035",
+    "bopRegisterId" : "F2021L00036",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "dengue virus infection",
+    "rhRegisterId" : "F2020L01379",
+    "bopRegisterId" : "F2020L01380",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A90"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A91"
+    } ]
+  }, {
+    "conditionName" : "dental caries",
+    "rhRegisterId" : "F2015L01675",
+    "bopRegisterId" : "F2015L01676",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K02.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K02.9"
+    } ]
+  }, {
+    "conditionName" : "dental malocclusion",
+    "rhRegisterId" : "F2019L00224",
+    "bopRegisterId" : "F2019L00225",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K07.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K07.4"
+    } ]
+  }, {
+    "conditionName" : "dental pulp and periapical disease",
+    "rhRegisterId" : "F2021L01388",
+    "bopRegisterId" : "F2021L01389",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K04"
+    } ]
+  }, {
+    "conditionName" : "depressive disorder",
+    "rhRegisterId" : "F2018C00661",
+    "bopRegisterId" : "F2018C00663",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "dermatomyositis",
+    "rhRegisterId" : "F2014L00008",
+    "bopRegisterId" : "F2014L00011",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "diabetes mellitus",
+    "rhRegisterId" : "F2021C00711",
+    "bopRegisterId" : "F2021C00712",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E10"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E11"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E12"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E13"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "E14"
+    } ]
+  }, {
+    "conditionName" : "discoid lupus erythematosus",
+    "rhRegisterId" : "F2015L01680",
+    "bopRegisterId" : "F2015L01681",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L93.0"
+    } ]
+  }, {
+    "conditionName" : "dislocation of a joint and subluxation of a joint",
+    "rhRegisterId" : "F2019L00640",
+    "bopRegisterId" : "F2019L00647",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "diverticular disease of the colon",
+    "rhRegisterId" : "F2020C00426",
+    "bopRegisterId" : "F2020C00383",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K57.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K57.3"
+    } ]
+  }, {
+    "conditionName" : "eating disorder",
+    "rhRegisterId" : "F2018C00640",
+    "bopRegisterId" : "F2018C00641",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F50.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F50.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F50.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F50.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F50.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F50.9"
+    } ]
+  }, {
+    "conditionName" : "electrical injury",
+    "rhRegisterId" : "F2018L00535",
+    "bopRegisterId" : "F2018L00536",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T75.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "T75.4"
+    } ]
+  }, {
+    "conditionName" : "endometriosis",
+    "rhRegisterId" : "F2021L00486",
+    "bopRegisterId" : "F2021L00487",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N80"
+    } ]
+  }, {
+    "conditionName" : "eosinophilic oesophagitis",
+    "rhRegisterId" : "F2022L00266",
+    "bopRegisterId" : "F2022L00267",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "epicondylitis",
+    "rhRegisterId" : "F2014L01784",
+    "bopRegisterId" : "F2014L01786",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M77.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M77.1"
+    } ]
+  }, {
+    "conditionName" : "epilepsy",
+    "rhRegisterId" : "F2013L01894",
+    "bopRegisterId" : "F2013L01895",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "epileptic seizure",
+    "rhRegisterId" : "F2013L01897",
+    "bopRegisterId" : "F2013L01899",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "erectile dysfunction",
+    "rhRegisterId" : "F2017C00787",
+    "bopRegisterId" : "F2017C00785",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "essential thrombocythaemia",
+    "rhRegisterId" : "F2021L01172",
+    "bopRegisterId" : "F2021L01173",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D47.3"
+    } ]
+  }, {
+    "conditionName" : "exertional heat illness",
+    "rhRegisterId" : "F2022L00263",
+    "bopRegisterId" : "F2022L00265",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "explosive blast injury",
+    "rhRegisterId" : "F2020L00485",
+    "bopRegisterId" : "F2020L00487",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "external bruise",
+    "rhRegisterId" : "F2016L00008",
+    "bopRegisterId" : "F2016L00005",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "external burn",
+    "rhRegisterId" : "F2017C00862",
+    "bopRegisterId" : "F2017C00861",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "familial adenomatous polyposis",
+    "rhRegisterId" : "F2021L00920",
+    "bopRegisterId" : "F2021L00921",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "female sexual dysfunction",
+    "rhRegisterId" : "F2018C00673",
+    "bopRegisterId" : "F2018C00674",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "femoroacetabular impingement syndrome",
+    "rhRegisterId" : "F2017L00883",
+    "bopRegisterId" : "F2017L00884",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "fibromuscular dysplasia",
+    "rhRegisterId" : "F2016L01674",
+    "bopRegisterId" : "F2016L01683",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I77.3"
+    } ]
+  }, {
+    "conditionName" : "fibromyalgia",
+    "rhRegisterId" : "F2021L01459",
+    "bopRegisterId" : "F2021L01460",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M79.7"
+    } ]
+  }, {
+    "conditionName" : "fibrosing interstitial lung disease",
+    "rhRegisterId" : "F2021L01162",
+    "bopRegisterId" : "F2021L01163",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "fracture",
+    "rhRegisterId" : "F2015L01340",
+    "bopRegisterId" : "F2015L01343",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "frostbite",
+    "rhRegisterId" : "F2018L00013",
+    "bopRegisterId" : "F2018L00014",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T33"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "T34"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "T35"
+    } ]
+  }, {
+    "conditionName" : "gastric ulcer and duodenal ulcer",
+    "rhRegisterId" : "F2018C00645",
+    "bopRegisterId" : "F2017C00758",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K25"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K26"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K27"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K28"
+    } ]
+  }, {
+    "conditionName" : "gastro-oesophageal reflux disease",
+    "rhRegisterId" : "F2021L00601",
+    "bopRegisterId" : "F2021L00602",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K21"
+    } ]
+  }, {
+    "conditionName" : "giant cell arteritis",
+    "rhRegisterId" : "F2021L00008",
+    "bopRegisterId" : "F2021L00010",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M31.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M31.6"
+    } ]
+  }, {
+    "conditionName" : "gingivitis",
+    "rhRegisterId" : "F2022L00010",
+    "bopRegisterId" : "F2022L00011",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A69.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K05.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K05.1"
+    } ]
+  }, {
+    "conditionName" : "goitre",
+    "rhRegisterId" : "F2022L00006",
+    "bopRegisterId" : "F2022L00005",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "gout",
+    "rhRegisterId" : "F2019L00637",
+    "bopRegisterId" : "F2019L00638",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M10"
+    } ]
+  }, {
+    "conditionName" : "gunshot injury",
+    "rhRegisterId" : "F2020L00495",
+    "bopRegisterId" : "F2020L00491",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "haemophilia",
+    "rhRegisterId" : "F2014L01831",
+    "bopRegisterId" : "F2014L01833",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D66"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D67"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D68.1"
+    } ]
+  }, {
+    "conditionName" : "haemorrhoids",
+    "rhRegisterId" : "F2017L00004",
+    "bopRegisterId" : "F2017L00005",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K64"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "O22.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "O87.2"
+    } ]
+  }, {
+    "conditionName" : "hallux valgus",
+    "rhRegisterId" : "F2015L01334",
+    "bopRegisterId" : "F2015L01335",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M20.1"
+    } ]
+  }, {
+    "conditionName" : "heart block",
+    "rhRegisterId" : "F2022L00276",
+    "bopRegisterId" : "F2022L00277",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I44"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I45.9"
+    } ]
+  }, {
+    "conditionName" : "hepatitis A",
+    "rhRegisterId" : "F2015L00645",
+    "bopRegisterId" : "F2015L00648",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B15"
+    } ]
+  }, {
+    "conditionName" : "hepatitis B",
+    "rhRegisterId" : "F2017L00001",
+    "bopRegisterId" : "F2017L00007",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B16"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B18.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B18.1"
+    } ]
+  }, {
+    "conditionName" : "hepatitis C",
+    "rhRegisterId" : "F2018L00016",
+    "bopRegisterId" : "F2018L00017",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B17.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B18.2"
+    } ]
+  }, {
+    "conditionName" : "hepatitis D",
+    "rhRegisterId" : "F2017L00020",
+    "bopRegisterId" : "F2017L00021",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B16.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B16.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B17.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B18.0"
+    } ]
+  }, {
+    "conditionName" : "hepatitis E",
+    "rhRegisterId" : "F2015L01332",
+    "bopRegisterId" : "F2015L01333",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B17.2"
+    } ]
+  }, {
+    "conditionName" : "hereditary haemochromatosis",
+    "rhRegisterId" : "F2021L00017",
+    "bopRegisterId" : "F2021L00018",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E83.1"
+    } ]
+  }, {
+    "conditionName" : "hereditary spherocytosis",
+    "rhRegisterId" : "F2015L00649",
+    "bopRegisterId" : "F2015L00650",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D58.0"
+    } ]
+  }, {
+    "conditionName" : "herpes simplex",
+    "rhRegisterId" : "F2018L00540",
+    "bopRegisterId" : "F2018L00542",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B00"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A60"
+    } ]
+  }, {
+    "conditionName" : "herpes zoster",
+    "rhRegisterId" : "F2015L00253",
+    "bopRegisterId" : "F2015L00254",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B02"
+    } ]
+  }, {
+    "conditionName" : "hiatus hernia",
+    "rhRegisterId" : "F2014L00924",
+    "bopRegisterId" : "F2014L00925",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K44"
+    } ]
+  }, {
+    "conditionName" : "hookworm disease",
+    "rhRegisterId" : "F2017L00010",
+    "bopRegisterId" : "F2017L00012",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B76"
+    } ]
+  }, {
+    "conditionName" : "horseshoe kidney",
+    "rhRegisterId" : "F2014L01844",
+    "bopRegisterId" : "F2014L01845",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Q63.11"
+    } ]
+  }, {
+    "conditionName" : "human T-cell lymphotropic virus type-1 infection",
+    "rhRegisterId" : "F2018L01478",
+    "bopRegisterId" : "F2018L01480",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Z22.6"
+    } ]
+  }, {
+    "conditionName" : "human immunodeficiency virus infection",
+    "rhRegisterId" : "F2018L01841",
+    "bopRegisterId" : "F2018L01842",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B20"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B21"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B22"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B23"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B24"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "Z21"
+    } ]
+  }, {
+    "conditionName" : "hyperacusis",
+    "rhRegisterId" : "F2021L00028",
+    "bopRegisterId" : "F2021L00029",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "hypersensitivity pneumonitis",
+    "rhRegisterId" : "F2020L00205",
+    "bopRegisterId" : "F2020L00206",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J67"
+    } ]
+  }, {
+    "conditionName" : "hypertension",
+    "rhRegisterId" : "F2019C00669",
+    "bopRegisterId" : "F2022L00259",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I10"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I15"
+    } ]
+  }, {
+    "conditionName" : "hyperthyroidism and thyrotoxicosis",
+    "rhRegisterId" : "F2021L01912",
+    "bopRegisterId" : "F2021L01913",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "hypogonadism",
+    "rhRegisterId" : "F2021L00619",
+    "bopRegisterId" : "F2021L00620",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "hypopituitarism",
+    "rhRegisterId" : "F2021C00710",
+    "bopRegisterId" : "F2021C00707",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E23.0"
+    } ]
+  }, {
+    "conditionName" : "hypothyroidism",
+    "rhRegisterId" : "F2022L00013",
+    "bopRegisterId" : "F2022L00014",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "iliotibial band syndrome",
+    "rhRegisterId" : "F2018L01838",
+    "bopRegisterId" : "F2018L01839",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M76.3"
+    } ]
+  }, {
+    "conditionName" : "immersion pulmonary oedema",
+    "rhRegisterId" : "F2017L00466",
+    "bopRegisterId" : "F2017L00468",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "immune thrombocytopaenia",
+    "rhRegisterId" : "F2017L01448",
+    "bopRegisterId" : "F2017L01449",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "incisional hernia",
+    "rhRegisterId" : "F2016L01350",
+    "bopRegisterId" : "F2016L01349",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K43.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K43.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K43.2"
+    } ]
+  }, {
+    "conditionName" : "inflammatory bowel disease",
+    "rhRegisterId" : "F2020L01388",
+    "bopRegisterId" : "F2020L01389",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K50"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K51"
+    } ]
+  }, {
+    "conditionName" : "influenza",
+    "rhRegisterId" : "F2017L01054",
+    "bopRegisterId" : "F2017L01056",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J09"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J10"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J11"
+    } ]
+  }, {
+    "conditionName" : "ingrowing nail",
+    "rhRegisterId" : "F2015L01326",
+    "bopRegisterId" : "F2015L01327",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L60.0"
+    } ]
+  }, {
+    "conditionName" : "inguinal hernia",
+    "rhRegisterId" : "F2021L00485",
+    "bopRegisterId" : "F2021L00497",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K40"
+    } ]
+  }, {
+    "conditionName" : "internal derangement of the knee",
+    "rhRegisterId" : "F2018L01843",
+    "bopRegisterId" : "F2018L01844",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M23.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M23.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M23.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M23.9"
+    } ]
+  }, {
+    "conditionName" : "intervertebral disc prolapse",
+    "rhRegisterId" : "F2020C00428",
+    "bopRegisterId" : "F2020C01031",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M50.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M50.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M50.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M51.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M51.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M51.2"
+    } ]
+  }, {
+    "conditionName" : "irritable bowel syndrome",
+    "rhRegisterId" : "F2019L00858",
+    "bopRegisterId" : "F2019L00860",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K58"
+    } ]
+  }, {
+    "conditionName" : "irritant contact dermatitis",
+    "rhRegisterId" : "F2021L00007",
+    "bopRegisterId" : "F2021L00009",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L22"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L24"
+    } ]
+  }, {
+    "conditionName" : "ischaemic heart disease",
+    "rhRegisterId" : "F2021C00904",
+    "bopRegisterId" : "F2021C00952",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I20"
+    } ]
+  }, {
+    "conditionName" : "joint instability",
+    "rhRegisterId" : "F2019L00645",
+    "bopRegisterId" : "F2019L00644",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M22.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M22.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M23.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M24.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M24.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M25.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M43.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M43.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M43.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M53.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "T84.0"
+    } ]
+  }, {
+    "conditionName" : "knee bursitis",
+    "rhRegisterId" : "F2018L00872",
+    "bopRegisterId" : "F2018L00882",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M70.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M70.5"
+    } ]
+  }, {
+    "conditionName" : "labral tear",
+    "rhRegisterId" : "F2017L00885",
+    "bopRegisterId" : "F2017L00886",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "leptospirosis",
+    "rhRegisterId" : "F2014L01385",
+    "bopRegisterId" : "F2014L01386",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A27"
+    } ]
+  }, {
+    "conditionName" : "lipoma",
+    "rhRegisterId" : "F2015C00802",
+    "bopRegisterId" : "F2015C00801",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D17"
+    } ]
+  }, {
+    "conditionName" : "localised sclerosis",
+    "rhRegisterId" : "F2019C00015",
+    "bopRegisterId" : "F2019C00016",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L94.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L94.1"
+    } ]
+  }, {
+    "conditionName" : "loss of teeth",
+    "rhRegisterId" : "F2018C00665",
+    "bopRegisterId" : "F2018C00668",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K08.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K08.3"
+    } ]
+  }, {
+    "conditionName" : "lumbar spondylosis",
+    "rhRegisterId" : "F2018C00478",
+    "bopRegisterId" : "F2018C00480",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M47.16"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.17"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.26"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.27"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.86"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.87"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.96"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.97"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M51.3"
+    } ]
+  }, {
+    "conditionName" : "macular degeneration",
+    "rhRegisterId" : "F2018L00885",
+    "bopRegisterId" : "F2018L00886",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "malaria",
+    "rhRegisterId" : "F2017L01049",
+    "bopRegisterId" : "F2017L01061",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B50"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B51"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B52"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B53"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B54"
+    } ]
+  }, {
+    "conditionName" : "malignant melanoma of the skin",
+    "rhRegisterId" : "F2015L01317",
+    "bopRegisterId" : "F2015L01318",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "malignant neoplasm of bone and articular cartilage",
+    "rhRegisterId" : "F2020L01110",
+    "bopRegisterId" : "F2020L01112",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C40"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C41"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the anus and anal canal",
+    "rhRegisterId" : "F2013L01638",
+    "bopRegisterId" : "F2013L01639",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C21.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C21.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C21.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D01.3"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the bile duct",
+    "rhRegisterId" : "F2017C00755",
+    "bopRegisterId" : "F2017C00753",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C22.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C24"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the bladder",
+    "rhRegisterId" : "F2019L01096",
+    "bopRegisterId" : "F2019L01097",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C67"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D09.0"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the brain",
+    "rhRegisterId" : "F2017C00807",
+    "bopRegisterId" : "F2017C00805",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C71"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the breast",
+    "rhRegisterId" : "F2018C00670",
+    "bopRegisterId" : "F2018C00671",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C50"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D05"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the cerebral meninges",
+    "rhRegisterId" : "F2018L00001",
+    "bopRegisterId" : "F2018L00002",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C70.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C70.9"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the cervix",
+    "rhRegisterId" : "F2020L01381",
+    "bopRegisterId" : "F2020L01383",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C53"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D06"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the colon and rectum",
+    "rhRegisterId" : "F2022L00012",
+    "bopRegisterId" : "F2022L00015",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C18"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C19"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C20"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the endometrium",
+    "rhRegisterId" : "F2017C00843",
+    "bopRegisterId" : "F2017C00842",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C54.1"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the eye",
+    "rhRegisterId" : "F2020C00216",
+    "bopRegisterId" : "F2020C00212",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C69.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C69.9"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D09.2"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the gallbladder",
+    "rhRegisterId" : "F2017C00859",
+    "bopRegisterId" : "F2017C00857",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C23"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the kidney",
+    "rhRegisterId" : "F2021L00358",
+    "bopRegisterId" : "F2021L00359",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C64"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the larynx",
+    "rhRegisterId" : "F2013L01649",
+    "bopRegisterId" : "F2013L01650",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C32"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the lung",
+    "rhRegisterId" : "F2020C00213",
+    "bopRegisterId" : "F2017C00828",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C33"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C34"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the nasopharynx",
+    "rhRegisterId" : "F2020L00192",
+    "bopRegisterId" : "F2020L00191",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C11"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the oesophagus",
+    "rhRegisterId" : "F2017C00840",
+    "bopRegisterId" : "F2017C00838",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C15"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the oral cavity, oropharynx and hypopharynx",
+    "rhRegisterId" : "F2021L00603",
+    "bopRegisterId" : "F2021L00604",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "malignant neoplasm of the ovary",
+    "rhRegisterId" : "F2018C00196",
+    "bopRegisterId" : "F2018C00151",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C56"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D39.1"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the pancreas",
+    "rhRegisterId" : "F2021L01401",
+    "bopRegisterId" : "F2021L01402",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C25.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C25.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C25.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C25.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C25.7"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C25.8"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the prostate",
+    "rhRegisterId" : "F2017C00076",
+    "bopRegisterId" : "F2017C00059",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C61"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the renal pelvis and ureter",
+    "rhRegisterId" : "F2019L01338",
+    "bopRegisterId" : "F2019L01339",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C65"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C66"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the salivary gland",
+    "rhRegisterId" : "F2017C00763",
+    "bopRegisterId" : "F2017C00761",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "malignant neoplasm of the small intestine",
+    "rhRegisterId" : "F2014L01807",
+    "bopRegisterId" : "F2014L01810",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C17"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the stomach",
+    "rhRegisterId" : "F2017C00769",
+    "bopRegisterId" : "F2017C00764",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C16"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the testis and paratesticular tissues",
+    "rhRegisterId" : "F2014L01813",
+    "bopRegisterId" : "F2014L01815",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "malignant neoplasm of the thyroid gland",
+    "rhRegisterId" : "F2017C00811",
+    "bopRegisterId" : "F2017C00809",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C73"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of the urethra",
+    "rhRegisterId" : "F2016L00580",
+    "bopRegisterId" : "F2016L00581",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C68"
+    } ]
+  }, {
+    "conditionName" : "malignant neoplasm of unknown primary site",
+    "rhRegisterId" : "F2017C00782",
+    "bopRegisterId" : "F2017C00779",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C80"
+    } ]
+  }, {
+    "conditionName" : "melioidosis",
+    "rhRegisterId" : "F2014L00940",
+    "bopRegisterId" : "F2014L00934",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A24.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A24.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A24.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "A24.4"
+    } ]
+  }, {
+    "conditionName" : "mesenteric panniculitis",
+    "rhRegisterId" : "F2018L00528",
+    "bopRegisterId" : "F2018L00529",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K65.8"
+    } ]
+  }, {
+    "conditionName" : "mesothelioma",
+    "rhRegisterId" : "F2017C00858",
+    "bopRegisterId" : "F2017C00860",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C45"
+    } ]
+  }, {
+    "conditionName" : "methaemoglobinaemia",
+    "rhRegisterId" : "F2019L00222",
+    "bopRegisterId" : "F2019L00223",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D74"
+    } ]
+  }, {
+    "conditionName" : "microscopic polyangiitis",
+    "rhRegisterId" : "F2019L01353",
+    "bopRegisterId" : "F2019L01358",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M31.7"
+    } ]
+  }, {
+    "conditionName" : "migraine",
+    "rhRegisterId" : "F2020C00214",
+    "bopRegisterId" : "F2020C00215",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G43"
+    } ]
+  }, {
+    "conditionName" : "mitral valve prolapse",
+    "rhRegisterId" : "F2014L00471",
+    "bopRegisterId" : "F2014L00473",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I34.1"
+    } ]
+  }, {
+    "conditionName" : "moderate to severe traumatic brain injury",
+    "rhRegisterId" : "F2018L01487",
+    "bopRegisterId" : "F2018L01488",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "morbid obesity",
+    "rhRegisterId" : "F2019C00544",
+    "bopRegisterId" : "F2019C00538",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "motor neurone disease",
+    "rhRegisterId" : "F2018C00791",
+    "bopRegisterId" : "F2021L01630",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G12.2"
+    } ]
+  }, {
+    "conditionName" : "multiple osteochondromatosis",
+    "rhRegisterId" : "F2015L00008",
+    "bopRegisterId" : "F2015L00009",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Q78.6"
+    } ]
+  }, {
+    "conditionName" : "multiple sclerosis",
+    "rhRegisterId" : "F2020L00213",
+    "bopRegisterId" : "F2020L00214",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G35"
+    } ]
+  }, {
+    "conditionName" : "myasthenia gravis",
+    "rhRegisterId" : "F2015L00907",
+    "bopRegisterId" : "F2015L00908",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G70.0"
+    } ]
+  }, {
+    "conditionName" : "myelodysplastic syndrome",
+    "rhRegisterId" : "F2017C00821",
+    "bopRegisterId" : "F2017C00816",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "myeloma",
+    "rhRegisterId" : "F2021L01182",
+    "bopRegisterId" : "F2021L01183",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C90"
+    } ]
+  }, {
+    "conditionName" : "myopia, hypermetropia and astigmatism",
+    "rhRegisterId" : "F2016L00245",
+    "bopRegisterId" : "F2016L00246",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H44.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H52.1"
+    } ]
+  }, {
+    "conditionName" : "narcolepsy",
+    "rhRegisterId" : "F2022L00002",
+    "bopRegisterId" : "F2022L00003",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G47.4"
+    } ]
+  }, {
+    "conditionName" : "neoplasm of the pituitary gland",
+    "rhRegisterId" : "F2017C00795",
+    "bopRegisterId" : "F2015L00260",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C75.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D35.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "D44.3"
+    } ]
+  }, {
+    "conditionName" : "neurocognitive disorder with Lewy bodies",
+    "rhRegisterId" : "F2019L00229",
+    "bopRegisterId" : "F2019L00231",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G31.3"
+    } ]
+  }, {
+    "conditionName" : "non-Hodgkin lymphoma",
+    "rhRegisterId" : "F2021C00529",
+    "bopRegisterId" : "F2021C00530",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "non-aneurysmal aortic atherosclerotic disease",
+    "rhRegisterId" : "F2017C00776",
+    "bopRegisterId" : "F2020L01082",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I70.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I74.0"
+    } ]
+  }, {
+    "conditionName" : "non-freezing cold injury",
+    "rhRegisterId" : "F2018L00008",
+    "bopRegisterId" : "F2018L00009",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T69.0"
+    } ]
+  }, {
+    "conditionName" : "non-melanotic malignant neoplasm of the skin",
+    "rhRegisterId" : "F2017C00849",
+    "bopRegisterId" : "F2017C00848",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "obstructive and reflux nephropathy",
+    "rhRegisterId" : "F2019L01103",
+    "bopRegisterId" : "F2019L01102",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N13"
+    } ]
+  }, {
+    "conditionName" : "olecranon bursitis",
+    "rhRegisterId" : "F2018L00854",
+    "bopRegisterId" : "F2018L00855",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M70.2"
+    } ]
+  }, {
+    "conditionName" : "open-angle glaucoma",
+    "rhRegisterId" : "F2021L00481",
+    "bopRegisterId" : "F2021L00482",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H40.1"
+    } ]
+  }, {
+    "conditionName" : "opisthorchiasis",
+    "rhRegisterId" : "F2016L00579",
+    "bopRegisterId" : "F2016L00584",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B66.0"
+    } ]
+  }, {
+    "conditionName" : "optochiasmatic arachnoiditis",
+    "rhRegisterId" : "F2017C00864",
+    "bopRegisterId" : "F2017C00863",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "osteoarthritis",
+    "rhRegisterId" : "F2020C00422",
+    "bopRegisterId" : "F2020C00353",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M15"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M16"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M17"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M18"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M19"
+    } ]
+  }, {
+    "conditionName" : "osteogenesis imperfecta",
+    "rhRegisterId" : "F2014L01848",
+    "bopRegisterId" : "F2014L01850",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "Q78.0"
+    } ]
+  }, {
+    "conditionName" : "osteomyelitis",
+    "rhRegisterId" : "F2017C00856",
+    "bopRegisterId" : "F2017C00855",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M86"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K10.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M46.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M90.2"
+    } ]
+  }, {
+    "conditionName" : "osteonecrosis",
+    "rhRegisterId" : "F2020L00199",
+    "bopRegisterId" : "F2020L00201",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K10.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M87"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M90.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M90.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M90.5"
+    } ]
+  }, {
+    "conditionName" : "osteoporosis",
+    "rhRegisterId" : "F2014L01388",
+    "bopRegisterId" : "F2014L01391",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M80"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M81"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M82"
+    } ]
+  }, {
+    "conditionName" : "otitic barotrauma",
+    "rhRegisterId" : "F2020L01404",
+    "bopRegisterId" : "F2020L01403",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T70.0"
+    } ]
+  }, {
+    "conditionName" : "otitis externa",
+    "rhRegisterId" : "F2021L00026",
+    "bopRegisterId" : "F2021L00027",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H60"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H62.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H62.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H62.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H62.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H62.4"
+    } ]
+  }, {
+    "conditionName" : "otitis media",
+    "rhRegisterId" : "F2017C00790",
+    "bopRegisterId" : "F2017C00786",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H65"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H66"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "H67"
+    } ]
+  }, {
+    "conditionName" : "otosclerosis",
+    "rhRegisterId" : "F2016L01152",
+    "bopRegisterId" : "F2016L01154",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H80"
+    } ]
+  }, {
+    "conditionName" : "panic disorder",
+    "rhRegisterId" : "F2018L00929",
+    "bopRegisterId" : "F2018L00931",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F40.01"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "F41.0"
+    } ]
+  }, {
+    "conditionName" : "patellar tendinopathy",
+    "rhRegisterId" : "F2020L00494",
+    "bopRegisterId" : "F2020L00499",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M76.5"
+    } ]
+  }, {
+    "conditionName" : "periodic limb movement disorder",
+    "rhRegisterId" : "F2014L00313",
+    "bopRegisterId" : "F2014L00314",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "periodontal abscess",
+    "rhRegisterId" : "F2022L00279",
+    "bopRegisterId" : "F2022L00280",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "periodontitis",
+    "rhRegisterId" : "F2022L00260",
+    "bopRegisterId" : "F2022L00262",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K05.3"
+    } ]
+  }, {
+    "conditionName" : "peripheral artery disease",
+    "rhRegisterId" : "F2020L01374",
+    "bopRegisterId" : "F2020L01375",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I70.2"
+    } ]
+  }, {
+    "conditionName" : "peripheral neuropathy",
+    "rhRegisterId" : "F2014L01135",
+    "bopRegisterId" : "F2014L01137",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "peritoneal adhesions",
+    "rhRegisterId" : "F2017C00847",
+    "bopRegisterId" : "F2017C00846",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K66.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K56.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N73.6"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "N99.4"
+    } ]
+  }, {
+    "conditionName" : "personality disorder",
+    "rhRegisterId" : "F2018C00649",
+    "bopRegisterId" : "F2018C00650",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "pes planus",
+    "rhRegisterId" : "F2021L00613",
+    "bopRegisterId" : "F2021L00614",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M21.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "Q66.5"
+    } ]
+  }, {
+    "conditionName" : "photocontact dermatitis",
+    "rhRegisterId" : "F2020L01382",
+    "bopRegisterId" : "F2020L01384",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L56.2"
+    } ]
+  }, {
+    "conditionName" : "pilonidal sinus",
+    "rhRegisterId" : "F2019L00248",
+    "bopRegisterId" : "F2019L00249",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L05"
+    } ]
+  }, {
+    "conditionName" : "pinguecula",
+    "rhRegisterId" : "F2015L01670",
+    "bopRegisterId" : "F2015L01672",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "plantar fasciitis",
+    "rhRegisterId" : "F2015L00257",
+    "bopRegisterId" : "F2015L00258",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "pleural plaque",
+    "rhRegisterId" : "F2014L00474",
+    "bopRegisterId" : "F2014L00477",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J92.0"
+    } ]
+  }, {
+    "conditionName" : "poisoning from plants or fungi",
+    "rhRegisterId" : "F2019L00651",
+    "bopRegisterId" : "F2019L00652",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "polyarteritis nodosa",
+    "rhRegisterId" : "F2020L00500",
+    "bopRegisterId" : "F2020L00501",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M30.0"
+    } ]
+  }, {
+    "conditionName" : "polycythaemia vera",
+    "rhRegisterId" : "F2021L01164",
+    "bopRegisterId" : "F2021L01171",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D45"
+    } ]
+  }, {
+    "conditionName" : "polymyalgia rheumatica",
+    "rhRegisterId" : "F2016L00249",
+    "bopRegisterId" : "F2016L00259",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M35.3"
+    } ]
+  }, {
+    "conditionName" : "popliteal cyst",
+    "rhRegisterId" : "F2018L00188",
+    "bopRegisterId" : "F2018L00190",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M66.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M71.2"
+    } ]
+  }, {
+    "conditionName" : "popliteal entrapment syndrome",
+    "rhRegisterId" : "F2017L01053",
+    "bopRegisterId" : "F2017L01058",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "porphyria cutanea tarda",
+    "rhRegisterId" : "F2021L00615",
+    "bopRegisterId" : "F2021L00616",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "E80.1"
+    } ]
+  }, {
+    "conditionName" : "posterior adventitial heel bursitis",
+    "rhRegisterId" : "F2019L00629",
+    "bopRegisterId" : "F2019L00630",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "posterior tibialis tendinopathy",
+    "rhRegisterId" : "F2021L00350",
+    "bopRegisterId" : "F2021L00351",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "posttraumatic stress disorder",
+    "rhRegisterId" : "F2018C00655",
+    "bopRegisterId" : "F2014L01145",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F43.1"
+    } ]
+  }, {
+    "conditionName" : "presbyopia",
+    "rhRegisterId" : "F2017L00172",
+    "bopRegisterId" : "F2017L00173",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H52.4"
+    } ]
+  }, {
+    "conditionName" : "primary myelofibrosis",
+    "rhRegisterId" : "F2021L01165",
+    "bopRegisterId" : "F2021L01166",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "psoriasis",
+    "rhRegisterId" : "F2018C00658",
+    "bopRegisterId" : "F2021L00015",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L40.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40.9"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L40"
+    } ]
+  }, {
+    "conditionName" : "psoriatic arthritis",
+    "rhRegisterId" : "F2021L00019",
+    "bopRegisterId" : "F2021L00021",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M07.0"
+    } ]
+  }, {
+    "conditionName" : "pterygium",
+    "rhRegisterId" : "F2015L01671",
+    "bopRegisterId" : "F2015L01674",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H11.0"
+    } ]
+  }, {
+    "conditionName" : "pulmonary barotrauma",
+    "rhRegisterId" : "F2014L01836",
+    "bopRegisterId" : "F2014L01839",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "pulmonary thromboembolism",
+    "rhRegisterId" : "F2021L00213",
+    "bopRegisterId" : "F2021L00214",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I26"
+    } ]
+  }, {
+    "conditionName" : "pure red cell aplasia",
+    "rhRegisterId" : "F2020L01083",
+    "bopRegisterId" : "F2020L01084",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D60"
+    } ]
+  }, {
+    "conditionName" : "rapidly progressive crescentic glomerulonephritis",
+    "rhRegisterId" : "F2019L00633",
+    "bopRegisterId" : "F2019L00634",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "reactive arthritis",
+    "rhRegisterId" : "F2018L01164",
+    "bopRegisterId" : "F2018L01165",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M02"
+    } ]
+  }, {
+    "conditionName" : "relapsing polychondritis",
+    "rhRegisterId" : "F2017L00006",
+    "bopRegisterId" : "F2017L00008",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M94.1"
+    } ]
+  }, {
+    "conditionName" : "renal artery atherosclerotic disease",
+    "rhRegisterId" : "F2020L01094",
+    "bopRegisterId" : "F2020L01095",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I70.1"
+    } ]
+  }, {
+    "conditionName" : "renal stone disease",
+    "rhRegisterId" : "F2019L00943",
+    "bopRegisterId" : "F2019L00944",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "N20"
+    } ]
+  }, {
+    "conditionName" : "restless legs syndrome",
+    "rhRegisterId" : "F2014L00307",
+    "bopRegisterId" : "F2014L00308",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "retinal vascular occlusion",
+    "rhRegisterId" : "F2020L00825",
+    "bopRegisterId" : "F2020L00831",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H34"
+    } ]
+  }, {
+    "conditionName" : "rheumatic heart disease",
+    "rhRegisterId" : "F2019L00635",
+    "bopRegisterId" : "F2019L00636",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I05"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I06"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I07"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I08"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I09"
+    } ]
+  }, {
+    "conditionName" : "rheumatoid arthritis",
+    "rhRegisterId" : "F2017L01055",
+    "bopRegisterId" : "F2017L01057",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M05"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M06"
+    } ]
+  }, {
+    "conditionName" : "rotator cuff syndrome",
+    "rhRegisterId" : "F2021C00080",
+    "bopRegisterId" : "F2021C00081",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M75.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M75.2"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M75.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M75.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M75.5"
+    } ]
+  }, {
+    "conditionName" : "sarcoidosis",
+    "rhRegisterId" : "F2019C00013",
+    "bopRegisterId" : "F2019C00096",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D86"
+    } ]
+  }, {
+    "conditionName" : "schistosomiasis",
+    "rhRegisterId" : "F2019L00946",
+    "bopRegisterId" : "F2019L00945",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B65"
+    } ]
+  }, {
+    "conditionName" : "schizophrenia",
+    "rhRegisterId" : "F2018C00646",
+    "bopRegisterId" : "F2018C00647",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F20.0"
+    } ]
+  }, {
+    "conditionName" : "scrub typhus",
+    "rhRegisterId" : "F2018L01162",
+    "bopRegisterId" : "F2018L01163",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A75.3"
+    } ]
+  }, {
+    "conditionName" : "seborrhoeic dermatitis",
+    "rhRegisterId" : "F2021L00352",
+    "bopRegisterId" : "F2021L00353",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L21.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L21.8"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L21.9"
+    } ]
+  }, {
+    "conditionName" : "seborrhoeic keratosis",
+    "rhRegisterId" : "F2015L00250",
+    "bopRegisterId" : "F2015L00251",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L82"
+    } ]
+  }, {
+    "conditionName" : "sensorineural hearing loss",
+    "rhRegisterId" : "F2019L01360",
+    "bopRegisterId" : "F2019L01361",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "shin splints",
+    "rhRegisterId" : "F2014L01805",
+    "bopRegisterId" : "F2014L01812",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "sick sinus syndrome",
+    "rhRegisterId" : "F2014L00020",
+    "bopRegisterId" : "F2014L00024",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I49.5"
+    } ]
+  }, {
+    "conditionName" : "sickle-cell disorder",
+    "rhRegisterId" : "F2017L00879",
+    "bopRegisterId" : "F2017L00881",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D57"
+    } ]
+  }, {
+    "conditionName" : "sinus barotrauma",
+    "rhRegisterId" : "F2019L00235",
+    "bopRegisterId" : "F2019L00237",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "T70.1"
+    } ]
+  }, {
+    "conditionName" : "sinusitis",
+    "rhRegisterId" : "F2018L01175",
+    "bopRegisterId" : "F2018L01177",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "J01"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "J32"
+    } ]
+  }, {
+    "conditionName" : "sleep apnoea",
+    "rhRegisterId" : "F2013L01129",
+    "bopRegisterId" : "F2013L01133",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G47.30"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G47.31"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G47.32"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G47.33"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "G47.39"
+    } ]
+  }, {
+    "conditionName" : "smallpox",
+    "rhRegisterId" : "F2016L01669",
+    "bopRegisterId" : "F2016L01670",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B03"
+    } ]
+  }, {
+    "conditionName" : "soft tissue sarcoma",
+    "rhRegisterId" : "F2017C00819",
+    "bopRegisterId" : "F2017C00822",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "C22.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C22.4"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C30.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C32.3"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C47"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C48"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "C49"
+    } ]
+  }, {
+    "conditionName" : "solar keratosis",
+    "rhRegisterId" : "F2021L00938",
+    "bopRegisterId" : "F2021L00940",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "L57.0"
+    } ]
+  }, {
+    "conditionName" : "somatic symptom disorder",
+    "rhRegisterId" : "F2014L00304",
+    "bopRegisterId" : "F2014L00299",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F45.1"
+    } ]
+  }, {
+    "conditionName" : "spasmodic torticollis",
+    "rhRegisterId" : "F2016L01136",
+    "bopRegisterId" : "F2016L01139",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G24.3"
+    } ]
+  }, {
+    "conditionName" : "spinal adhesive arachnoiditis",
+    "rhRegisterId" : "F2020L01391",
+    "bopRegisterId" : "F2020L01393",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "spondylolisthesis and spondylolysis",
+    "rhRegisterId" : "F2017L00165",
+    "bopRegisterId" : "F2017L00167",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M43.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "Q76.21"
+    } ]
+  }, {
+    "conditionName" : "sprain and strain",
+    "rhRegisterId" : "F2020L00482",
+    "bopRegisterId" : "F2020L00483",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "steatohepatitis",
+    "rhRegisterId" : "F2013L01898",
+    "bopRegisterId" : "F2013L01900",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "strongyloidiasis",
+    "rhRegisterId" : "F2019L00888",
+    "bopRegisterId" : "F2019L00889",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B78"
+    } ]
+  }, {
+    "conditionName" : "subarachnoid haemorrhage",
+    "rhRegisterId" : "F2019L00947",
+    "bopRegisterId" : "F2019L00948",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I60"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "S06.6"
+    } ]
+  }, {
+    "conditionName" : "subdural haematoma",
+    "rhRegisterId" : "F2019L01347",
+    "bopRegisterId" : "F2019L01348",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "S06.5"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "I62.0"
+    } ]
+  }, {
+    "conditionName" : "substance use disorder",
+    "rhRegisterId" : "F2018C00653",
+    "bopRegisterId" : "F2018C00651",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "sudden unexplained death",
+    "rhRegisterId" : "F2013L01645",
+    "bopRegisterId" : "F2013L01646",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "R96"
+    } ]
+  }, {
+    "conditionName" : "suicide and attempted suicide",
+    "rhRegisterId" : "F2022C00351",
+    "bopRegisterId" : "F2022C00352",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "systemic lupus erythematosus",
+    "rhRegisterId" : "F2016L00262",
+    "bopRegisterId" : "F2016L00274",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M32"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L93.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "L93.2"
+    } ]
+  }, {
+    "conditionName" : "systemic sclerosis",
+    "rhRegisterId" : "F2018L00194",
+    "bopRegisterId" : "F2018L00195",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M34"
+    } ]
+  }, {
+    "conditionName" : "temporomandibular disorder",
+    "rhRegisterId" : "F2020C00424",
+    "bopRegisterId" : "F2020C00355",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M26.60"
+    } ]
+  }, {
+    "conditionName" : "tension-type headache",
+    "rhRegisterId" : "F2018L00563",
+    "bopRegisterId" : "F2018L00564",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G44.2"
+    } ]
+  }, {
+    "conditionName" : "thoracic spondylosis",
+    "rhRegisterId" : "F2018C00481",
+    "bopRegisterId" : "F2018C00482",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M47.14"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.15"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.24"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.25"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.84"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.85"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.94"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M47.95"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "M51.3"
+    } ]
+  }, {
+    "conditionName" : "thromboangiitis obliterans",
+    "rhRegisterId" : "F2017L00462",
+    "bopRegisterId" : "F2017L00464",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I73.1"
+    } ]
+  }, {
+    "conditionName" : "tinea",
+    "rhRegisterId" : "F2014L01814",
+    "bopRegisterId" : "F2014L01816",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "B35"
+    } ]
+  }, {
+    "conditionName" : "tinnitus",
+    "rhRegisterId" : "F2020L01385",
+    "bopRegisterId" : "F2020L01386",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "H93.1"
+    } ]
+  }, {
+    "conditionName" : "tooth wear",
+    "rhRegisterId" : "F2018C00585",
+    "bopRegisterId" : "F2018C00635",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K03.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K03.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K03.2"
+    } ]
+  }, {
+    "conditionName" : "toxic retinopathy",
+    "rhRegisterId" : "F2018L00192",
+    "bopRegisterId" : "F2018L00193",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "toxic vestibulopathy",
+    "rhRegisterId" : "F2020L01394",
+    "bopRegisterId" : "F2020L01396",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "transverse myelitis",
+    "rhRegisterId" : "F2021L00609",
+    "bopRegisterId" : "F2021L00608",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "G37.3"
+    } ]
+  }, {
+    "conditionName" : "trigeminal neuralgia",
+    "rhRegisterId" : "F2015L00909",
+    "bopRegisterId" : "F2015L00910",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "trigeminal neuropathy",
+    "rhRegisterId" : "F2017C00814",
+    "bopRegisterId" : "F2017C00812",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "trigger finger",
+    "rhRegisterId" : "F2019L00227",
+    "bopRegisterId" : "F2019L00238",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M65.3"
+    } ]
+  }, {
+    "conditionName" : "trochanteric bursitis and gluteal tendinopathy",
+    "rhRegisterId" : "F2020C00856",
+    "bopRegisterId" : "F2020C00857",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "M70.6"
+    } ]
+  }, {
+    "conditionName" : "tuberculosis",
+    "rhRegisterId" : "F2015L00913",
+    "bopRegisterId" : "F2015L00914",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "ulnar neuropathy at the elbow",
+    "rhRegisterId" : "F2020C00421",
+    "bopRegisterId" : "F2020C00425",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "umbilical hernia",
+    "rhRegisterId" : "F2016L01673",
+    "bopRegisterId" : "F2016L01676",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "K42.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K42.1"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "K42.9"
+    } ]
+  }, {
+    "conditionName" : "vaccine-induced thrombotic thrombocytopaenia",
+    "rhRegisterId" : "F2022L00268",
+    "bopRegisterId" : "F2022L00269",
+    "icdCodes" : [ ]
+  }, {
+    "conditionName" : "varicocoele",
+    "rhRegisterId" : "F2019L01092",
+    "bopRegisterId" : "F2019L01099",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "I86.1"
+    } ]
+  }, {
+    "conditionName" : "vascular dementia",
+    "rhRegisterId" : "F2014L01140",
+    "bopRegisterId" : "F2014L01141",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "F01"
+    } ]
+  }, {
+    "conditionName" : "von Willebrand's disease",
+    "rhRegisterId" : "F2015L00006",
+    "bopRegisterId" : "F2015L00007",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "D68.0"
+    } ]
+  }, {
+    "conditionName" : "warts",
+    "rhRegisterId" : "F2014L00926",
+    "bopRegisterId" : "F2014L00927",
+    "icdCodes" : [ {
+      "version" : "ICD-10-AM",
+      "code" : "A63.0"
+    }, {
+      "version" : "ICD-10-AM",
+      "code" : "B07"
+    } ]
+  } ]
+}

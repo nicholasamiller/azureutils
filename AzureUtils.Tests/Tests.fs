@@ -13,10 +13,12 @@ type TestClass () =
     let containerName = "test"
     let blobName = "test.json"
 
+    let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName,blobName)
+
     [<TestMethodAttribute>]
     member this.TestUpload () =
         let testJson = """ {"test": "value"} """
-        let r = BlobUtils.writeJsonBlobAsync(connectionString,containerName,blobName, testJson).Result
+        let r = underTest.WriteJsonBlobAsync(testJson).Result
         match r with
         | Ok() -> Assert.IsNotNull r
         | _ -> Assert.Fail()
@@ -29,7 +31,7 @@ type TestClass () =
             sr.ReadToEnd()
 
         try 
-            let r = BlobUtils.getBlobAsync(connectionString,containerName, blobName).Result
+            let r = underTest.GetBlobAsync().Result
             match r with 
             | Ok(c) -> printfn "%s" (readAsString c.Content)
             | _ -> Assert.Fail()
@@ -41,7 +43,7 @@ type TestClass () =
     [<TestMethod>]
     member this.TestLastModified () =
         try
-            let r = BlobUtils.getLastModified(connectionString, containerName, blobName).Result
+            let r = underTest.GetLastModifiedDate().Result
             match r with
             | Ok(r) -> printfn "%A" r
             | _ -> Assert.Fail()

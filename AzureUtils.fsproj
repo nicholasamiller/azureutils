@@ -8,16 +8,21 @@
 
 	<PropertyGroup>
 		<PackageId>Nam.AzureUtils</PackageId>
-		<Version>0.1.1</Version>
+		<Version>0.3.1</Version>
 		<Authors>Nicholas Miller</Authors>
 		<Description>
 			Miscellaneous utils for working with Azure from .NET SDK.
 		</Description>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/nicholasamiller/azureutils</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/nicholasamiller/azureutils</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>Nicholas Miller</Copyright>
+		
 	</PropertyGroup>
 	
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="AzureBlobCache.fs" />
   </ItemGroup>
 
   <ItemGroup>

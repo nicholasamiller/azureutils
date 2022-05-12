@@ -7,7 +7,7 @@ open System.IO
 open System
 open System.Threading.Tasks
    
-    type Cache =
+    type private Cache =
             {
                 Contents : string;
                 Refreshed: DateTimeOffset 

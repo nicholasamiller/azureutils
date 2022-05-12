@@ -6,15 +6,20 @@ open Azure.Storage.Blobs.Models
 open System.IO
 open System
 open System.Threading.Tasks
-    
+   
+    type Cache =
+            {
+                Contents : string;
+                Refreshed: DateTimeOffset 
+            }
 
     type AzureJsonBlobCache(connectionString: string, containerName: string, blobName : string, cacheRefreshInterval : TimeSpan) =
         
+       
         let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions())
         let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
         let blobClient = blobContainerClient.GetBlobClient(blobName)
-        let mutable blobJsonCache = None
-        let mutable lastCacheRefresh = DateTimeOffset.UtcNow
+        let mutable (cache : Option<Cache>) = None
         
         let readAsString (s : Stream)  = 
             use sr = new StreamReader(s)
@@ -23,21 +28,21 @@ open System.Threading.Tasks
         member private this.RefreshCacheIfStale()  =
                 async {
                     try
-                        match blobJsonCache with
-                        | Some(v) -> 
-                            let! lastModifiedDate = this.GetLastModifiedDate()  // gets property data from Azure Storage only, save bandwith
-                            match (lastModifiedDate > lastCacheRefresh) with
-                            | true ->
-                                let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                                blobJsonCache <- Some(readAsString azureResponse.Value.Content)
-                                lastCacheRefresh <- DateTimeOffset.UtcNow
-                            | false -> 
-                                lastCacheRefresh <- DateTimeOffset.UtcNow 
+                        match cache with
                         | None -> 
                              let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                             blobJsonCache <- Some(readAsString azureResponse.Value.Content)
-                             lastCacheRefresh <- DateTimeOffset.UtcNow
-                       
+                             cache <-  Some({Contents = readAsString azureResponse.Value.Content; Refreshed = DateTimeOffset.UtcNow})
+                             return cache.Value
+                        | Some(v) -> 
+                            let! lastModifiedDate = this.GetLastModifiedDate()  // gets property data from Azure Storage only, save bandwith
+                            match (lastModifiedDate >= v.Refreshed) with
+                            | true ->
+                                let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
+                                cache <-  Some({Contents = readAsString azureResponse.Value.Content; Refreshed = DateTimeOffset.UtcNow})
+                                return cache.Value
+                            | false -> 
+                                cache <- Some({ v with Refreshed = DateTimeOffset.UtcNow})
+                                return cache.Value
                     with
                         | ex -> return! raise (new AzureBlobCacheException("Error refreshing cache from Azure Blob Storage.",ex))
                 } 
@@ -45,15 +50,22 @@ open System.Threading.Tasks
         
         member this.GetBlobJsonContentAsString() =
             task {
-                let timeSpanSinceLastCacheCheck = DateTimeOffset.UtcNow - lastCacheRefresh
                 return!
                     async {
-                        match (timeSpanSinceLastCacheCheck > cacheRefreshInterval) with
-                        | true ->
-                            let! r = this.RefreshCacheIfStale()
-                            return blobJsonCache.Value
-                        | false -> return blobJsonCache.Value
-                    }
+                        match cache with
+                        | Some(v) -> 
+                           let timeSinceRefresh = DateTimeOffset.UtcNow - v.Refreshed
+                    
+                           match (timeSinceRefresh > cacheRefreshInterval) with
+                           | true ->
+                                let! currentCache = this.RefreshCacheIfStale()
+                                return currentCache.Contents
+                           | false ->  
+                                return v.Contents
+                        | None ->
+                            let! freshCache = this.RefreshCacheIfStale()
+                            return freshCache.Contents
+                    }           
             }
          
 
@@ -74,7 +86,9 @@ open System.Threading.Tasks
                             | ex -> return Error ex
                     }
                 match writeResult with
-                | Ok() -> return Task.CompletedTask
+                | Ok() -> 
+                    cache <- Some({Contents = json; Refreshed = DateTimeOffset.UtcNow})
+                    return Task.CompletedTask
                 | Error(ex) -> return! raise (new AzureBlobCacheException("Error refreshing cache from Azure Blob Storage.",ex))
         }
         

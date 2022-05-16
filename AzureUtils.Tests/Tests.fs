@@ -2,17 +2,15 @@ namespace AzureUtils.Tests
 open AzureUtils
 
 open System
-open Microsoft.VisualStudio.TestTools.UnitTesting
 open System.IO
 open Azure.Storage.Blobs
 open System.Threading
+open Microsoft.Extensions.Logging
+open Microsoft.Extensions.Logging.Console
+open Xunit
 
 
-
-
-
-[<TestClass>]
-type TestClass () =
+module Tests =
     
     //Make sure local storage emulator or Azurite is running with -skipApiVersionCheck flag in correct working folder.
 
@@ -26,6 +24,7 @@ type TestClass () =
     let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions())
     let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
     let blobClient = blobContainerClient.GetBlobClient(blobName)
+    let loggerFactory = LoggerFactory.Create(fun builder -> builder.AddConsole() |> ignore)
     
     let readAsString (s : Stream)  = 
         use sr = new StreamReader(s)
@@ -34,31 +33,34 @@ type TestClass () =
     let toStream (text: string) =
         new MemoryStream(System.Text.Encoding.UTF8.GetBytes(text))
 
-    [<TestMethod>]
-    member this.TestUpload () =
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1) )
+ 
+    
+
+    [<Fact>]
+    let ``upload``  () =
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1),loggerFactory )
         blobClient.DeleteIfExists() |> ignore // setup
         underTest.WriteJsonBlobAsync(testJson1).Result |> ignore
         let retrievedContent = blobClient.Download().Value.Content
-        Assert.AreEqual(testJson1,readAsString retrievedContent)
+        Assert.Equal(testJson1,readAsString retrievedContent)
         blobClient.DeleteIfExists() |> ignore // tear down
 
-    [<TestMethod>]
-    member this.WhenCacheShouldeBeStaleInterval () =
+    [<Fact>]
+    let ``cache stale`` () =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(toStream testJson1) |> ignore
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromSeconds(10))
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromSeconds(10), loggerFactory)
         let r1 = underTest.GetBlobJsonContentAsString().Result
         blobClient.DeleteIfExists() |> ignore 
         let r2 = underTest.GetBlobJsonContentAsString().Result
         // should not have updated, cache should be stale
-        Assert.AreEqual(r1,r2)
+        Assert.Equal(r1,r2)
     
-    [<TestMethod>]
-    member this.WhenCacheShouldHaveRefreshed () =
+    [<Fact>]
+    let ``cache not stale`` () =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(toStream testJson1) |> ignore
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromMilliseconds(10))
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromMilliseconds(10), loggerFactory)
         let r1 = underTest.GetBlobJsonContentAsString().Result
         blobClient.DeleteIfExists() |> ignore 
         Thread.Sleep(1000)
@@ -66,19 +68,19 @@ type TestClass () =
         Thread.Sleep(1000)
         let r2 = underTest.GetBlobJsonContentAsString().Result
         // should have updated
-        Assert.AreNotEqual(r1,r2)
+        Assert.NotEqual<string>(r1,r2)
         
 
-    [<TestMethod>]
-    member this.TestBlobRetrieval () =
+    [<Fact>]
+    let ``get blob`` () =
         blobClient.DeleteIfExists() |> ignore 
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1))
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1), loggerFactory)
         blobClient.Upload(toStream testJson1) |> ignore
+        Thread.Sleep(1000)
         let r = underTest.GetBlobJsonContentAsString().Result
-        Assert.AreEqual(r,testJson1)
+        Assert.Equal(r,testJson1)
             
-   
-       
+           
    
     
    

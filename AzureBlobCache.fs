@@ -1,24 +1,24 @@
-﻿
-namespace AzureUtils
+﻿namespace AzureUtils
 open Azure
 open Azure.Storage.Blobs
 open Azure.Storage.Blobs.Models
 open System.IO
 open System
 open System.Threading.Tasks
+open Microsoft.Extensions.Logging
    
     type private Cache =
             {
                 Contents : string;
                 Refreshed: DateTimeOffset 
             }
-
-    type AzureJsonBlobCache(connectionString: string, containerName: string, blobName : string, cacheRefreshInterval : TimeSpan) =
+    
+    type AzureJsonBlobCache(connectionString: string, containerName: string, blobName : string, cacheRefreshInterval : TimeSpan, logFactory : ILoggerFactory) =
         
-       
         let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions())
         let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
         let blobClient = blobContainerClient.GetBlobClient(blobName)
+        let logger = logFactory.CreateLogger(typeof<AzureJsonBlobCache>)
         let mutable (cache : Option<Cache>) = None
         
         let readAsString (s : Stream)  = 
@@ -29,18 +29,21 @@ open System.Threading.Tasks
                 async {
                     try
                         match cache with
-                        | None -> 
-                             let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                             cache <-  Some({Contents = readAsString azureResponse.Value.Content; Refreshed = DateTimeOffset.UtcNow})
-                             return cache.Value
+                        | None ->
+                            logger.LogInformation("Cache empty.")
+                            let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
+                            cache <-  Some({Contents = readAsString azureResponse.Value.Content; Refreshed = DateTimeOffset.UtcNow})
+                            return cache.Value
                         | Some(v) -> 
                             let! lastModifiedDate = this.GetLastModifiedDate()  // gets property data from Azure Storage only, save bandwith
                             match (lastModifiedDate >= v.Refreshed) with
                             | true ->
+                                logger.LogInformation("Cache stale.")
                                 let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
                                 cache <-  Some({Contents = readAsString azureResponse.Value.Content; Refreshed = DateTimeOffset.UtcNow})
                                 return cache.Value
                             | false -> 
+                                logger.LogInformation("Cache not stale.")
                                 cache <- Some({ v with Refreshed = DateTimeOffset.UtcNow})
                                 return cache.Value
                     with
@@ -58,9 +61,11 @@ open System.Threading.Tasks
                     
                            match (timeSinceRefresh > cacheRefreshInterval) with
                            | true ->
+                                logger.LogInformation("Due to check cache currency.")
                                 let! currentCache = this.RefreshCacheIfStale()
                                 return currentCache.Contents
                            | false ->  
+                                logger.LogInformation("Not yet due to check cache currency.")
                                 return v.Contents
                         | None ->
                             let! freshCache = this.RefreshCacheIfStale()

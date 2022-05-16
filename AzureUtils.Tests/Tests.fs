@@ -25,6 +25,8 @@ module Tests =
     let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
     let blobClient = blobContainerClient.GetBlobClient(blobName)
     let loggerFactory = LoggerFactory.Create(fun builder -> builder.AddConsole() |> ignore)
+
+
     
     let readAsString (s : Stream)  = 
         use sr = new StreamReader(s)
@@ -33,9 +35,9 @@ module Tests =
     let toStream (text: string) =
         new MemoryStream(System.Text.Encoding.UTF8.GetBytes(text))
 
- 
-    
-
+        
+        
+        
     [<Fact>]
     let ``upload``  () =
         let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1),loggerFactory )

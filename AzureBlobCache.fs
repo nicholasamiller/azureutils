@@ -8,19 +8,20 @@ open System.Threading.Tasks
 open Microsoft.Extensions.Logging
 open Microsoft.Extensions.Caching.Memory
 open Azure.Core
+open System.Text.Json
    
     type private CacheEntry =
             {
-                Contents : string;
+                Contents : BinaryData;
                 ETag: ETag;
                 CurrencyLastChecked: DateTimeOffset;
             }
     
-    type AzureJsonBlobCache(connectionString: string, containerName: string, cacheRefreshInterval : TimeSpan, memoryCache: IMemoryCache, logFactory : ILoggerFactory) =
+    type AzureBlobCache(connectionString: string, containerName: string, cacheRefreshInterval : TimeSpan, memoryCache: IMemoryCache, logFactory : ILoggerFactory) =
         
         let blobServiceClient = new BlobServiceClient(connectionString, new BlobClientOptions())
         let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
-        let logger = logFactory.CreateLogger(typeof<AzureJsonBlobCache>)
+        let logger = logFactory.CreateLogger(typeof<AzureBlobCache>)
          
         let readAsString (s : Stream)  = 
             use sr = new StreamReader(s)
@@ -41,7 +42,7 @@ open Azure.Core
                         | None ->
                             logger.LogInformation("Cache empty.")
                             let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                            putInMemoryCache (blobName, {Contents = readAsString azureResponse.Value.Content; ETag = azureResponse.Value.Details.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
+                            putInMemoryCache (blobName, {Contents = BinaryData.FromStream(azureResponse.Value.Content); ETag = azureResponse.Value.Details.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
                             return getFromMemoryCache blobName
                         | Some(v) -> 
                             let! etagInBlobStorage = this.GetEtag(blobClient)  // gets property data from Azure Storage only, save bandwith
@@ -49,7 +50,7 @@ open Azure.Core
                             | true ->
                                 logger.LogInformation("Cache stale.")
                                 let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                                putInMemoryCache (blobName,{Contents = readAsString azureResponse.Value.Content; ETag = etagInBlobStorage; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
+                                putInMemoryCache (blobName,{Contents = BinaryData.FromStream( azureResponse.Value.Content); ETag = etagInBlobStorage; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
                                 return getFromMemoryCache blobName
                             | false -> 
                                 logger.LogInformation("Cache not stale.")
@@ -83,26 +84,24 @@ open Azure.Core
             }
          
 
-        member this.WriteJsonBlobAsync(blobName : string, json : string) =
+        member this.WriteBlobAsync(blobName : string, blob : obj) =
             task {
+                let binaryData = new BinaryData(blob)
                 let! writeResult =
                     async {
                         let blobClient = blobContainerClient.GetBlobClient(blobName)
                         // create container if does not exist
                         let options = new BlobUploadOptions(HttpHeaders = new BlobHttpHeaders(ContentEncoding = "utf-8",ContentType = "application/json") )
-                        let stringAsBytes = System.Text.Encoding.UTF8.GetBytes(json)
-                        use ms = new System.IO.MemoryStream(stringAsBytes)
                         try
                             let! createIfNotExistsResponse = blobContainerClient.CreateIfNotExistsAsync() |> Async.AwaitTask 
-                            
-                            let! azureResponse = blobClient.UploadAsync(ms,options) |> Async.AwaitTask
+                            let! azureResponse = blobClient.UploadAsync(binaryData,options) |> Async.AwaitTask
                             return Ok(azureResponse)
                         with
                             | ex -> return Error ex
                     }
                 match writeResult with
                 | Ok(r) -> 
-                    putInMemoryCache (blobName,{Contents = json; ETag = r.Value.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow }) |> ignore
+                    putInMemoryCache (blobName,{Contents = binaryData; ETag = r.Value.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow }) |> ignore
                     return Task.CompletedTask
                 | Error(ex) -> return! raise (new AzureBlobCacheException("Error refreshing cache from Azure Blob Storage.",ex))
         }

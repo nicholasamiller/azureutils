@@ -98,6 +98,13 @@ module Tests =
         Assert.Equal(cat,testCat1)
     
     [<Fact>]
+    let ``getting blob that does not exist should return null`` () =
+        
+        let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)
+        let result = underTest.GetJsonBlob("doesNotExist.json").Result
+        Assert.Null(result)
+
+    [<Fact>]
     let ``different blobs`` () = 
         
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)

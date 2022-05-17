@@ -33,6 +33,8 @@ open System.Text.Json
             match memoryCache.Get(blobName) with
             | null -> None
             | v -> Some(v :?> CacheEntry)
+        
+
 
         member private this.RefreshCacheIfStale(blobName : string)  =
                 async {
@@ -40,20 +42,28 @@ open System.Text.Json
                         let blobClient = blobContainerClient.GetBlobClient(blobName)
                         match getFromMemoryCache blobName with
                         | None ->
-                            logger.LogInformation("Cache empty.")
-                            let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                            putInMemoryCache (blobName, {Contents = BinaryData.FromStream(azureResponse.Value.Content); ETag = azureResponse.Value.Details.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
-                            return getFromMemoryCache blobName
+                            logger.LogTrace("Cache empty.")
+                            let! blobExists = blobClient.ExistsAsync() |> Async.AwaitTask
+                            match blobExists.Value with
+                            | true ->
+                                let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
+                                putInMemoryCache (blobName, {Contents = BinaryData.FromStream(azureResponse.Value.Content); ETag = azureResponse.Value.Details.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
+                                return getFromMemoryCache blobName
+                            | false -> return None
                         | Some(v) -> 
                             let! etagInBlobStorage = this.GetEtag(blobClient)  // gets property data from Azure Storage only, save bandwith
                             match (etagInBlobStorage <>  v.ETag) with
                             | true ->
-                                logger.LogInformation("Cache stale.")
-                                let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
-                                putInMemoryCache (blobName,{Contents = BinaryData.FromStream( azureResponse.Value.Content); ETag = etagInBlobStorage; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
-                                return getFromMemoryCache blobName
+                                logger.LogTrace("Cache stale.")
+                                let! blobExists = blobClient.ExistsAsync() |> Async.AwaitTask
+                                match blobExists.Value with
+                                | true ->
+                                    let! azureResponse = blobClient.DownloadAsync() |> Async.AwaitTask
+                                    putInMemoryCache (blobName,{Contents = BinaryData.FromStream( azureResponse.Value.Content); ETag = etagInBlobStorage; CurrencyLastChecked = DateTimeOffset.UtcNow}) |> ignore
+                                    return getFromMemoryCache blobName
+                                | false -> return None
                             | false -> 
-                                logger.LogInformation("Cache not stale.")
+                                logger.LogTrace("Cache not stale.")
                                 putInMemoryCache (blobName,{ v with ETag = etagInBlobStorage; CurrencyLastChecked = DateTimeOffset.UtcNow }) |> ignore
                                 return getFromMemoryCache blobName
                     with
@@ -71,15 +81,19 @@ open System.Text.Json
                     
                            match (timeSinceCurrencyLastChecked > cacheRefreshInterval) with
                            | true ->
-                                logger.LogInformation("Due to check cache currency.")
+                                logger.LogTrace("Due to check cache currency.")
                                 let! currentCache = this.RefreshCacheIfStale(blobName)
-                                return currentCache.Value.Contents
+                                match currentCache with
+                                | Some(v) -> return v.Contents
+                                | None -> return null
                            | false ->  
-                                logger.LogInformation("Not yet due to check cache currency.")
+                                logger.LogTrace("Not yet due to check cache currency.")
                                 return v.Contents
                         | None ->
-                            let! freshCache = this.RefreshCacheIfStale(blobName)
-                            return freshCache.Value.Contents
+                           let! freshCache = this.RefreshCacheIfStale(blobName)
+                           match freshCache with
+                           | Some(v) -> return v.Contents
+                           | None -> return null
                     }           
             }
          

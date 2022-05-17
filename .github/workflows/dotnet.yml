@@ -21,5 +21,11 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Run Azurite Docker Container
+      uses: addnab/docker-run-action@v3
+      with:
+        image: mcr.microsoft.com/azure-storage/azurite
+        options: -p 10000:10000 -p 10001:10001 -p 10002:10002
+        run: azurite --skipApiVersionCheck --loose -l /workspace -d /workspace/debug.log --blobHost 0.0.0.0 --queueHost 0.0.0.0 --tableHost 0.0.0.0
     - name: Test
       run: dotnet test --no-build --verbosity normal

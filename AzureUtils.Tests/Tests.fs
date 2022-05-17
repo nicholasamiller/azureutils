@@ -8,6 +8,8 @@ open System.Threading
 open Microsoft.Extensions.Logging
 open Microsoft.Extensions.Logging.Console
 open Xunit
+open Microsoft.Extensions.Caching.Memory
+open Microsoft.Extensions.Options
 
 
 module Tests =
@@ -25,9 +27,8 @@ module Tests =
     let blobContainerClient = blobServiceClient.GetBlobContainerClient(containerName)
     let blobClient = blobContainerClient.GetBlobClient(blobName)
     let loggerFactory = LoggerFactory.Create(fun builder -> builder.AddConsole() |> ignore)
-
-
-    
+    let memoryCache = new MemoryCache(new MemoryCacheOptions())
+        
     let readAsString (s : Stream)  = 
         use sr = new StreamReader(s)
         sr.ReadToEnd()
@@ -35,14 +36,14 @@ module Tests =
     let toStream (text: string) =
         new MemoryStream(System.Text.Encoding.UTF8.GetBytes(text))
 
-        
+    let testBlobName = "test.json"
         
         
     [<Fact>]
     let ``upload``  () =
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1),loggerFactory )
+        let underTest =  new AzureUtils.AzureJsonBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory )
         blobClient.DeleteIfExists() |> ignore // setup
-        underTest.WriteJsonBlobAsync(testJson1).Result |> ignore
+        underTest.WriteJsonBlobAsync(testBlobName, testJson1).Result |> ignore
         let retrievedContent = blobClient.Download().Value.Content
         Assert.Equal(testJson1,readAsString retrievedContent)
         blobClient.DeleteIfExists() |> ignore // tear down
@@ -51,10 +52,10 @@ module Tests =
     let ``cache stale`` () =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(toStream testJson1) |> ignore
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromSeconds(10), loggerFactory)
-        let r1 = underTest.GetBlobJsonContentAsString().Result
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,TimeSpan.FromSeconds(10), memoryCache, loggerFactory)
+        let r1 = underTest.GetJsonBlob(testBlobName).Result
         blobClient.DeleteIfExists() |> ignore 
-        let r2 = underTest.GetBlobJsonContentAsString().Result
+        let r2 = underTest.GetJsonBlob(testBlobName).Result
         // should not have updated, cache should be stale
         Assert.Equal(r1,r2)
     
@@ -62,13 +63,11 @@ module Tests =
     let ``cache not stale`` () =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(toStream testJson1) |> ignore
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromMilliseconds(10), loggerFactory)
-        let r1 = underTest.GetBlobJsonContentAsString().Result
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName, TimeSpan.FromMilliseconds(10), memoryCache, loggerFactory)
+        let r1 = underTest.GetJsonBlob(testBlobName).Result
         blobClient.DeleteIfExists() |> ignore 
-        Thread.Sleep(1000)
         blobClient.Upload(toStream testJson2) |> ignore
-        Thread.Sleep(1000)
-        let r2 = underTest.GetBlobJsonContentAsString().Result
+        let r2 = underTest.GetJsonBlob(testBlobName).Result
         // should have updated
         Assert.NotEqual<string>(r1,r2)
         
@@ -76,10 +75,9 @@ module Tests =
     [<Fact>]
     let ``get blob`` () =
         blobClient.DeleteIfExists() |> ignore 
-        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName,blobName, TimeSpan.FromHours(1), loggerFactory)
+        let underTest = new AzureUtils.AzureJsonBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)
         blobClient.Upload(toStream testJson1) |> ignore
-        Thread.Sleep(1000)
-        let r = underTest.GetBlobJsonContentAsString().Result
+        let r = underTest.GetJsonBlob(testBlobName).Result
         Assert.Equal(r,testJson1)
             
            

@@ -97,9 +97,14 @@ open System.Text.Json
                     }           
             }
          
+        member this.WriteBlobAsync(blobName: string, binaryData: BinaryData) = 
+            let defaultHeaders =  (new BlobHttpHeaders(ContentEncoding = "utf-8",ContentType = "application/json"));
+            this.WriteBlobAsync(blobName,binaryData, defaultHeaders);
+            
 
-        member this.WriteBlobAsync(blobName: string, binaryData: BinaryData) =
-         task {
+        member this.WriteBlobAsync(blobName: string, binaryData: BinaryData, headers: BlobHttpHeaders) =
+            task {
+                
                 let! writeResult =
                     async {
                         let blobClient = blobContainerClient.GetBlobClient(blobName)
@@ -117,7 +122,7 @@ open System.Text.Json
                     putInMemoryCache (blobName,{Contents = binaryData; ETag = r.Value.ETag; CurrencyLastChecked = DateTimeOffset.UtcNow }) |> ignore
                     return Task.CompletedTask
                 | Error(ex) -> return! raise (new AzureBlobCacheException("Error refreshing cache from Azure Blob Storage.",ex))
-        }     
+            }     
 
         member this.WriteBlobAsync(blobName : string, blob : obj) =
             task {

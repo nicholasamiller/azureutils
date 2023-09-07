@@ -34,6 +34,11 @@ open System.Text.Json
             | null -> None
             | v -> Some(v :?> CacheEntry)
         
+        member this.getEtag(blobName : string) =
+             match getFromMemoryCache blobName with
+            | Some(v) -> v.ETag.ToString()
+            | None -> null
+
         member this.matchesEtag(etag: ETag, blobName: string) =
             match getFromMemoryCache blobName with
             | Some(v) -> v.ETag = etag

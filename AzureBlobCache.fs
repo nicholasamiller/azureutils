@@ -34,7 +34,10 @@ open System.Text.Json
             | null -> None
             | v -> Some(v :?> CacheEntry)
         
-
+        member this.matchesEtag(etag: ETag, blobName: string) =
+            match getFromMemoryCache blobName with
+            | Some(v) -> v.ETag = etag
+            | None -> false
 
         member private this.RefreshCacheIfStale(blobName : string)  =
                 async {
@@ -71,7 +74,8 @@ open System.Text.Json
                 } 
                         
         
-        member this.GetJsonBlob(blobName : string) =
+        
+        member this.GetBlob(blobName : string) =
             task {
                 return!
                     async {

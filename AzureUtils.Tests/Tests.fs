@@ -66,9 +66,9 @@ module Tests =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(new BinaryData(testCat1)) |> ignore
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName,TimeSpan.FromSeconds(10), memoryCache, loggerFactory)
-        let r1 = underTest.GetJsonBlob(testBlobName).Result.ToObjectFromJson<Cat>()
+        let r1 = underTest.GetBlob(testBlobName).Result.ToObjectFromJson<Cat>()
         blobClient.DeleteIfExists() |> ignore 
-        let r2 = underTest.GetJsonBlob(testBlobName).Result.ToObjectFromJson<Cat>()
+        let r2 = underTest.GetBlob(testBlobName).Result.ToObjectFromJson<Cat>()
         // should not have updated, cache should be stale
         Assert.Equal(r1,r2)
     
@@ -77,11 +77,11 @@ module Tests =
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(new BinaryData(testCat1)) |> ignore
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromMilliseconds(10), memoryCache, loggerFactory)
-        let r1 = underTest.GetJsonBlob(testBlobName).Result.ToObjectFromJson<Cat>()
+        let r1 = underTest.GetBlob(testBlobName).Result.ToObjectFromJson<Cat>()
         blobClient.DeleteIfExists() |> ignore 
         blobClient.Upload(new BinaryData(testCat2)) |> ignore
         Thread.Sleep(11)
-        let r2 = underTest.GetJsonBlob(testBlobName).Result.ToObjectFromJson<Cat>()
+        let r2 = underTest.GetBlob(testBlobName).Result.ToObjectFromJson<Cat>()
         // should have updated
         Assert.NotEqual(r1,r2)
         
@@ -92,7 +92,7 @@ module Tests =
         blobClient.DeleteIfExists() |> ignore 
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)
         blobClient.Upload(new BinaryData(testCat1)) |> ignore
-        let r = underTest.GetJsonBlob(testBlobName).Result
+        let r = underTest.GetBlob(testBlobName).Result
         let expectedData = new BinaryData(testCat1)
         let cat = expectedData.ToObjectFromJson<Cat>()
         Assert.Equal(cat,testCat1)
@@ -101,7 +101,7 @@ module Tests =
     let ``getting blob that does not exist should return null`` () =
         
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)
-        let result = underTest.GetJsonBlob("doesNotExist.json").Result
+        let result = underTest.GetBlob("doesNotExist.json").Result
         Assert.Null(result)
 
     [<Fact>]
@@ -110,8 +110,8 @@ module Tests =
         let underTest = new AzureUtils.AzureBlobCache(connectionString,containerName, TimeSpan.FromHours(1), memoryCache, loggerFactory)
         underTest.WriteBlobAsync("cat1",testCat1).Result |> ignore
         underTest.WriteBlobAsync("cat2",testCat2).Result |> ignore
-        let c1 = underTest.GetJsonBlob("cat1").Result.ToObjectFromJson<Cat>()
-        let c2 = underTest.GetJsonBlob("cat2").Result.ToObjectFromJson<Cat>()
+        let c1 = underTest.GetBlob("cat1").Result.ToObjectFromJson<Cat>()
+        let c2 = underTest.GetBlob("cat2").Result.ToObjectFromJson<Cat>()
         Assert.Equal(testCat1,c1)
         Assert.Equal(testCat2,c2)
 

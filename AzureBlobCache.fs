@@ -104,14 +104,13 @@ open System.Text.Json
 
         member this.WriteBlobAsync(blobName: string, binaryData: BinaryData, headers: BlobHttpHeaders) =
             task {
-                
                 let! writeResult =
                     async {
                         let blobClient = blobContainerClient.GetBlobClient(blobName)
                         // create container if does not exist
-                        let options = new BlobUploadOptions(HttpHeaders = new BlobHttpHeaders(ContentEncoding = "utf-8",ContentType = "application/json") )
+                        let options = new BlobUploadOptions(HttpHeaders = headers )
                         try
-                            let! createIfNotExistsResponse = blobContainerClient.CreateIfNotExistsAsync() |> Async.AwaitTask 
+                            blobContainerClient.CreateIfNotExistsAsync() |> Async.AwaitTask  |> ignore
                             let! azureResponse = blobClient.UploadAsync(binaryData,options) |> Async.AwaitTask
                             return Ok(azureResponse)
                         with

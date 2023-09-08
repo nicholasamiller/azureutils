@@ -34,10 +34,18 @@ open System.Text.Json
             | null -> None
             | v -> Some(v :?> CacheEntry)
         
-        member this.GetEtag(blobName : string) : Nullable<ETag> =
-             match getFromMemoryCache blobName with
-            | Some(v) -> Nullable(v.ETag)
-            | None -> Nullable()
+        // if etag not in memory cache, then need to get form Azure Storage anyway
+
+        member this.GetEtag(blobName : string)  =
+            task {
+                return!
+                    async {
+                        let! currentCacheEntry = this.RefreshCacheIfStale(blobName)
+                        match currentCacheEntry with 
+                        | None -> return Nullable()
+                        | Some(v) -> return Nullable(v.ETag)
+                    }
+            }
 
         member private this.RefreshCacheIfStale(blobName : string)  =
                 async {
@@ -75,7 +83,7 @@ open System.Text.Json
                         
         
         
-        member this.GetBlob(blobName : string) =
+        member this.GetBlob(blobName : string) : Task<BinaryData> =
             task {
                 return!
                     async {

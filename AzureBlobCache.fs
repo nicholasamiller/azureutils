@@ -34,15 +34,10 @@ open System.Text.Json
             | null -> None
             | v -> Some(v :?> CacheEntry)
         
-        member this.getEtag(blobName : string) =
+        member this.GetEtag(blobName : string) : Nullable<ETag> =
              match getFromMemoryCache blobName with
-            | Some(v) -> v.ETag.ToString()
-            | None -> null
-
-        member this.matchesEtag(etag: ETag, blobName: string) =
-            match getFromMemoryCache blobName with
-            | Some(v) -> v.ETag = etag
-            | None -> false
+            | Some(v) -> Nullable(v.ETag)
+            | None -> Nullable()
 
         member private this.RefreshCacheIfStale(blobName : string)  =
                 async {
